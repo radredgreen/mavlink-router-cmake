@@ -19,7 +19,7 @@
 
 #include <common/conf_file.h>
 
-#include <aio.h>
+//#include <aio.h>
 #include <assert.h>
 #include <dirent.h>
 #include <string>
@@ -79,7 +79,7 @@ protected:
         Timeout *alive = nullptr;
     } _timeout;
     uint32_t _timeout_write_total = 0;
-    aiocb _fsync_cb = {};
+    //aiocb _fsync_cb = {};
 
     virtual const char *_get_logfile_extension() = 0;
 
